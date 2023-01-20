@@ -92,18 +92,17 @@ style = "bg:#FCA17D fg:#EEEEEE "
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
-conflicted = '🏳 ${count}'
-ahead = '🏎💨 ${count}'
-behind = '😰 ${count}'
-diverged = '😵 ${count}'
-#up_to_date = '✓ ${count}'
-untracked = '🤷 ${count}'
-stashed = '📦 ${count}'
-modified = '📝 ${count}'
-staged = '[++\($count\)](green)'
-renamed = '👅 ${count}'
-deleted = '🗑 ${count}'
+style = "fg:#EEEEEE bg:#FCA17D"
+conflicted = ' ${count}'
+ahead = '﯁ ${count} '
+behind = '﮾ ${count} '
+diverged = ' | ﯁ ${ahead_count}  ﮾ ${behind_coun} '
+untracked = ' ${count} '
+stashed = ' ${count} '
+modified = ' ${count} '
+staged = ' ${count} '
+renamed = ' ${count} '
+deleted = ' ${count} '
 format = '[$all_status$ahead_behind]($style)'
 
 [golang]
